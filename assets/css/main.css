@@ -1,20 +1,43 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/*-----------------------------------------------
+Ehsan Added:
+-------------------------------------------------*/
+@font-face {
+  font-family: nastaliq;
+  src: url(../Fonts/IranNastaliq.ttf);
+}
+@font-face {
+  font-family: nazanin;
+  src: url(../Fonts/BNazanin.ttf);
+}
+@font-face {
+  font-family: lotus;
+  src: url(../Fonts/BLotus.ttf);
+}
+@font-face {
+  font-family: iransans;
+  src: url(../Fonts/Iranian\ Sans.ttf);
+}
 
+.hadith, #arabic{
+  font-family: nastaliq;
+  font-size:200%
+}
+.hadith, #farsi{
+  font-family: nazanin;
+  font-size:100%
+}
+
+#jadval_about{
+  font-family: nazanin;
+}
 /*--------------------------------------------------------------
 # Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: iransans, nastaliq , nazanin, lotus,"Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: iransans, nastaliq , nazanin, lotus,"Raleway",  sans-serif;
+  --nav-font: iransans, nastaliq , nazanin, lotus,"Poppins",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -146,7 +169,7 @@ h6 {
   color: var(--default-color);
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   padding: 0 15px;
   transition: all ease-in-out 0.3s;
@@ -160,23 +183,23 @@ h6 {
     background-color: var(--background-color);
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     width: 300px;
-    left: -100%;
+    right: -100%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
   .header~main {
-    margin-left: 160px;
+    margin-right: 160px;
   }
 
   .header~main .hero {
-    margin-left: -160px;
+    margin-right: -160px;
     width: 100vw;
   }
 }
 
 .header.header-show {
-  left: 0;
+  right: 0;
 }
 
 .header .header-toggle {
