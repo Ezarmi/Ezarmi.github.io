@@ -30,6 +30,9 @@ Ehsan Added:
 #jadval_about{
   font-family: nazanin;
 }
+.bi-eata{
+  list-style-image: url(../img/eata.png);
+}
 /*--------------------------------------------------------------
 # Font & Color Variables
 --------------------------------------------------------------*/
